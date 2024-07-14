@@ -1,0 +1,69 @@
+.city-section
+  background-color $color-green
+
+  &__container
+    position relative
+    color: $color-text-black
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 150px 0 150px 0
+
+  &__title
+    color: $color-white
+    +above($breakpoints.lg)
+      letter-spacing -2px
+
+  &__sub-title
+    padding 20px 0
+    color: $color-white
+    +above($breakpoints.lg)
+      letter-spacing -1px
+      padding 60px 0
+
+  &__form
+    display: flex
+    flex-direction: column
+    gap: 10px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      width 360px
+    +above($breakpoints.md)
+      width 850px
+      justify-content center
+      flex-direction: row
+      gap 20px
+
+  &__agree
+    margin: 10px auto 0;
+    width: 210px;
+    +above($breakpoints.md)
+      margin: 20px auto 0;
+      letter-spacing -1px
+      width 480px
+
+  &__plant-left
+    display: none
+    +above($breakpoints.xxl)
+      display: block
+      position: absolute
+      top: 0
+      left: -390px
+
+  &__plant-right
+    display: none
+    +above($breakpoints.xxl)
+      display: block
+      position: absolute
+      top: 0
+      right: -390px
+
+.city-section-item
+  +above($breakpoints.md)
+    width 270px
+
+.city-section-flowers
+  height: 484px
+  background-image: url("../images/city-section-flowers-bg.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover

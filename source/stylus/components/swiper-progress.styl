@@ -1,0 +1,82 @@
+.swiper-progress-small
+  position relative !important
+  height: 6px !important
+  overflow: hidden
+  background: #F4EEE9
+  margin: 14px 0 0 0
+  border-radius: 10px !important
+  +above($breakpoints.sm)
+    display: none
+  .swiper-pagination-progressbar-fill
+    border-radius: 10px !important
+    background: linear-gradient(to right, #768E4D, #F5BF54)
+
+.swiper-progress-medium
+  position relative !important
+  height: 6px !important
+  overflow: hidden
+  background: #F4EEE9
+  margin: 14px 0 0 0
+  border-radius: 10px !important
+  +above($breakpoints.md)
+    display: none
+  .swiper-pagination-progressbar-fill
+    border-radius: 10px !important
+    background: linear-gradient(to right, #768E4D, #F5BF54)
+
+.swiper-progress-medium-start
+  position relative !important
+  height: 6px !important
+  overflow: hidden
+  background: #F4EEE9
+  margin: 14px 0 0 0
+  border-radius: 10px !important
+  +above($breakpoints.md)
+    display: none
+  .swiper-pagination-progressbar-fill
+    border-radius: 10px !important
+    background: linear-gradient(to right, #768E4D, #F5BF54)
+
+.swiper-progress-large
+  position relative !important
+  height: 6px !important
+  overflow: hidden
+  background: #F4EEE9
+  margin: 14px 0 0 0
+  border-radius: 10px !important
+  +above($breakpoints.xxl)
+    display: none
+  .swiper-pagination-progressbar-fill
+    border-radius: 10px !important
+    background: linear-gradient(to right, #768E4D, #F5BF54)
+
+.swiper-progress-desktop
+  position relative !important
+  height: 6px !important
+  overflow: hidden
+  background: #F4EEE9
+  margin: 14px 0 0 0
+  border-radius: 10px !important
+  +above($breakpoints.xxl)
+    display: none
+  .swiper-pagination-progressbar-fill
+    border-radius: 10px !important
+    background: linear-gradient(to right, #768E4D, #F5BF54)
+.button-next,
+.button-prev
+  display: none
+  +above($breakpoints.xxl)
+    display: block
+.button-next
+  transform: rotate(180deg)
+.swiper-button
+  position: absolute;
+  z-index: 1;
+  bottom: 60px;
+  left: 60px;
+  width 140px
+  display: flex
+  flex-direction: row
+  justify-content center
+  align-items: center
+  gap: 20px

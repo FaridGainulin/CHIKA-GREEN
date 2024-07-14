@@ -1,0 +1,13 @@
+section.calculations-section
+  .wrapper
+    .calculations-section__container
+      img.calculations-section__plant-left(src="images/calculations-section-plant-left.png" loading="lazy" width="557" height="514" alt="plant")
+      img.calculations-section__plant-right(src="images/calculations-section-plant-right.png" loading="lazy" width="557" height="514" alt="plant")
+      h2.calculations-section__title.font-s-44.font-w-medium.text-center Хотите получить детальные расчеты <br> для вашего города и под ваш бюджет?
+      .calculations-section__sub-title.font-s-22.font-w-bold.text-center Скачайте финансовую модель франшизы «CHIKA GREEN»
+      form.calculations-section__form(data-feedback-form)
+        input.input.calculations-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input.calculations-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.button.btn.calculations-item(type="submit") Узнать
+      .calculations-section__agree
+        include ../components/agree.pug

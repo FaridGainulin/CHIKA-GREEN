@@ -1,0 +1,26 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      .main-section__header-wrapper
+        include ../components/header.pug
+      .main-section__inner
+        .main-section__inner-left
+          .main-section__title.font-s-48
+            h1
+              span.font-w-semi-bold Постройте прибыльный <br> бизнес на продаже <br> цветов 
+              span.font-w-medium.color-white-60 с франшизой арт- <br> студии «CHIKA GREEN»
+          .main-section__text.font-s-22
+            .font-w-bold Узнайте, как получать от 930 000 рублей 
+            .font-w-medium ежемесячно в вашем городе
+          form.main-section__form(data-feedback-form)
+            input.input.item(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input.item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.button.btn.item(type="submit") Узнать
+            .main-section__agree.item
+              include ../components/agree.pug
+        .main-section__inner-right
+          img.main-section__logo(src="images/logo.png" loading="lazy" width="565" height="223" alt="image")
+          img.main-section__image(src="images/main-section-img-woman.png" loading="lazy" width="662" height="720" alt="image")
+          img.main-section__plant(src="images/main-section-plant.png" loading="lazy" width="45" height="81" alt="plant")
+          img.main-section__plant2(src="images/main-section-plant2.png" loading="lazy" width="44" height="67" alt="plant")
+          img.main-section__plant3(src="images/main-section-plant3.png" loading="lazy" width="26" height="39" alt="plant")

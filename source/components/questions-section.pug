@@ -1,0 +1,16 @@
+section.questions-section
+  .wrapper
+    .questions-section__container
+      .questions-section__inner
+        img.questions-section__image(src="images/questions-section-img.png" loading="lazy" width="497" height="330" alt="image")
+        h2.questions-section__title.font-s-44.font-w-medium У вас есть вопросы? <br> Задайте их в форме!
+        form.questions-section__form(data-feedback-form)
+          textarea.input.input--textarea(type="textarea" name="answer" autocomplete="off" placeholder="Текст вопроса")
+          input.input.items-questions(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input.items-questions(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.button.btn.items-questions(type="submit") Задать вопрос
+          .questions-section__agree.items-questions
+            include ../components/agree.pug
+
+
+            

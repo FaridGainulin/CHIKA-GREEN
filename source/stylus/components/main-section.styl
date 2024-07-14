@@ -1,0 +1,177 @@
+.main-section
+  background-color $color-beige
+
+  &__header-wrapper
+    background-color $color-beige
+    color: $color-text-black
+    position relative
+    z-index 2
+    +above($breakpoints.lg)
+      background-color unset
+      color: white
+
+  &__inner
+    display: flex
+    flex-direction: column
+    justify-content center
+    align-items: center
+    +above($breakpoints.lg)
+      flex-direction: row
+      align-items: start
+    +above($breakpoints.xxl)
+      justify-content start
+
+  &__inner-left
+    position relative
+    z-index 1
+    background-color $color-green
+    width 100%
+    +above($breakpoints.lg)
+      width: 600px
+      &:after
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-color: $color-green
+        width: 100vw;
+        height: 1077px;
+        bottom: 0;
+        right: 0;
+    +above($breakpoints.xxl)
+      width: 677px
+      &:after
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-color: $color-green
+        width: 100vw;
+        height: 981px;
+        bottom: 0;
+        right: 0;
+
+  &__inner-right
+    position relative
+    z-index 1
+    background-color $color-beige
+    width 100%
+    +above($breakpoints.lg)
+      width 406px
+      &:after
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-color: $color-beige
+        width: 100vw;
+        height: 1077px;
+        bottom: 0;
+        left: 0;
+    +above($breakpoints.xxl)
+      &:after
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-color: $color-beige
+        width: 100vw;
+        height: 981px;
+        bottom: 0;
+        left: 0;
+
+  &__title
+    padding: 15px 0 15px 0
+    text-align: center
+    +above($breakpoints.lg)
+      padding: 150px 0 60px 0
+    +above($breakpoints.xxl)
+      text-align: start
+
+  &__text
+    text-align: center
+    padding-bottom 20px
+    +above($breakpoints.lg)
+      padding-bottom 60px
+    +above($breakpoints.xxl)
+      text-align: start
+
+  &__form
+    margin 0 auto
+    padding-bottom 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content center
+    gap: 10px
+    width 100%
+    max-width 270px
+    +above($breakpoints.sm)
+      max-width: 677px
+      padding-bottom 150px
+      flex-direction: row
+      flex-wrap: wrap
+      gap: 20px
+    +above($breakpoints.lg)
+      max-width: 270px
+      margin 0 auto
+    +above($breakpoints.xxl)
+      max-width: 560px
+      margin 0
+
+  &__logo
+    margin 20px auto
+    width 300px
+    height: auto
+    +above($breakpoints.lg)
+      margin 150px auto 669px
+    +above($breakpoints.xxl)
+      width 565px
+      height: 223px
+      margin 160px 0 458px 40px
+
+  &__image
+    margin 0 auto
+    width 300px
+    height: auto
+    +above($breakpoints.lg)
+      position: absolute
+      z-index 1
+      width 530px
+      bottom: 0
+      right: 3px
+      margin 0
+    +above($breakpoints.xxl)
+      width 662px
+      height: 720px
+      right: -156px
+
+  &__plant
+    display: none
+    +above($breakpoints.xxl)
+      display: block
+      position: absolute
+      width 45px
+      height: 81px
+      right: -180px;
+      bottom: 432px;
+
+  &__plant2
+    display: none
+    +above($breakpoints.xxl)
+      display: block
+      position: absolute
+      width 44px
+      height: 67px
+      left: 50px;
+      bottom: 563px;
+
+  &__plant3
+    display: none
+    +above($breakpoints.xxl)
+      display: block
+      position: absolute
+      width 26px
+      height: 39px
+      right: -100px;
+      bottom: 580px;
+
+.item
+  width 100%
+  max-width 270px

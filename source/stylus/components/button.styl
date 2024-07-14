@@ -1,0 +1,78 @@
+.btn
+  height: 55px
+  width 100%
+  user-select: none
+  position: relative
+  display: flex;
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  color: $color-text-black
+  // border-radius: 100px
+  background: $color-yellow
+  font-family: "Manrope-Bold"
+  font-weight: 700
+  font-size: 16px;
+  line-height: 140%
+  transition transform 0.5s, top 0.8s
+  +above($breakpoints.sm)
+    font-size: 18px;
+    height: 60px;
+  +above($breakpoints.md)
+    font-size: 20px;
+    height: 64px
+
+  &:hover
+    transform: scale(1.02)
+
+  &:active
+    top: 3px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation
+      0%
+          left: -150%
+      100% 
+          left: 250%
+
+  &--bg-red-main
+    height: 60px
+
+.btn2
+  height: 55px
+  width 100%
+  pointer-events: none
+  user-select: none
+  position: relative
+  display: flex;
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  color: #1E1E1E50
+  background: #F5BF5450
+  font-family: "Manrope-Bold"
+  font-weight: 700
+  font-size: 16px;
+  line-height: 140%
+  +above($breakpoints.sm)
+    font-size: 18px;
+    height: 60px;
+  +above($breakpoints.md)
+    font-size: 20px;
+    height: 64px
+
+
+
+
+

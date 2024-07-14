@@ -1,0 +1,45 @@
+.finances-section
+  background-color $color-beige
+  +above($breakpoints.md)
+    background-image: url("../images/finance-section-bg.jpg")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+  &__container
+    color: $color-text-black
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 150px 0 150px 0
+
+  &__title
+    padding-bottom 20px
+    letter-spacing -2px
+    +above($breakpoints.lg)
+      padding-bottom 80px
+
+  &__cards
+    letter-spacing -1px
+    +above($breakpoints.md)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      row-gap: 20px
+      column-gap: 426px
+    +above($breakpoints.xxl)
+      column-gap: 600px
+
+  &__card
+    width 270px !important
+    height: 200px
+    padding 30px
+    background-color #fff
+    display: flex
+    flex-direction: column
+    justify-content space-between
+    +above($breakpoints.sm)
+      width 300px !important
+    +above($breakpoints.md)
+      height: 270px
+      width 270px !important
+
