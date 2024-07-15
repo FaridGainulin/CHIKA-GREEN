@@ -22,8 +22,7 @@
       height: 140px
 
   &__title,
-  &__connection-icon,
-  &__connection-order
+  &__connection-icon
     display: none
     +above($breakpoints.sm)
       display: block
@@ -32,6 +31,7 @@
     display: flex
     flex-direction: row
     align-items: center
+    cursor pointer
     gap: 20px
 
 
@@ -40,3 +40,8 @@
 
   &__connection-phone-number
     letter-spacing: 1.4px
+
+  &__connection-order
+    letter-spacing: -1px
+    +above($breakpoints.sm)
+      letter-spacing: 0

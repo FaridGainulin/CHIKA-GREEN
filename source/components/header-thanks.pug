@@ -5,9 +5,9 @@ header.header
         img.header__connection-logo-icon(src="images/logo-icon.jpg" alt="icon" loading="lazy" width="120" height="140")
       .header__title
         .font-w-medium.font-s-16 Франшиза <br> арт-студии цветов
-    .header__connection(data-remodal-target="modal-form-call-me")
+    a.header__connection(href="tel:+70000000000")
       img.header__connection-icon(src="images/connection-icon.svg" alt="icon" loading="lazy" width="40" height="40")
       .header__connection-text
         .header__connection-phone-number
           include ../components/phone-number.pug
-        a.header__connection-order.font-w-regular.font-s-16(href="tel:+70000000000") заказать обратный звонок
+        .header-thanks__connection-order.font-w-regular.font-s-16 позвоните сейчас, <br> чтобы не ждать звонка
