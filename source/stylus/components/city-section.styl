@@ -1,12 +1,20 @@
 .city-section
+  background-image: url("../images/city-section-bg.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
   background-color $color-green
 
   &__container
     position relative
     color: $color-text-black
     padding 20px 0 20px 0
-    +above($breakpoints.lg)
-      padding 150px 0 150px 0
+    +above($breakpoints.sm)
+      padding 50px 0 100px 0
+    +above($breakpoints.md)
+      padding 90px 0 300px 0
+    +above($breakpoints.xxl)
+      padding 150px 0 637px 0
 
   &__title
     color: $color-white
@@ -41,29 +49,6 @@
       letter-spacing -1px
       width 480px
 
-  &__plant-left
-    display: none
-    +above($breakpoints.xxl)
-      display: block
-      position: absolute
-      top: 0
-      left: -390px
-
-  &__plant-right
-    display: none
-    +above($breakpoints.xxl)
-      display: block
-      position: absolute
-      top: 0
-      right: -390px
-
 .city-section-item
   +above($breakpoints.md)
     width 270px
-
-.city-section-flowers
-  height: 484px
-  background-image: url("../images/city-section-flowers-bg.jpg")
-  background-repeat: no-repeat
-  background-position: center
-  background-size: cover
